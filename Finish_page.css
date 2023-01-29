@@ -1,0 +1,16 @@
+.thumb{
+    width: 180px;
+    margin: auto;
+    padding-top: 8%;
+}
+div{
+    width: 310px;
+    margin: auto;
+}
+section span{
+    font-size: 25px;
+    margin: 20%;
+}
+nav{
+    box-shadow: 0px 1px 1px #000;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Form-one.css">
+    <title>Book A Ride</title>
+    <link rel="stylesheet" href="../Internship_Projects/bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/js/bootstrap.js">
+    <link rel="stylesheet" href="../Internship_Projects/bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg bg-light navbar-light py-4 px-2">
+        <div class="container">
+            <a href="Index.html" class="navbar-brand">TAX<span class="text-warning">URY</span></a>
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse"
+                data-bs-target="#navmenu"
+                ><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">DRIVE WITH US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">BECOME A PARTNER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">SUPPORT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">SERVICES</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="bg-dark-subtle">
+        <div>
+            <form action="Finish_page.html" class="form bg-light">
+                <span>
+                    <label for="customer-Name">
+                        Name:
+                    </label>
+                    <input style="padding: 5px;" required type="text" id="customer-Name">
+                </span>
+                <span>
+                    <label for="phone-number">
+                        Phone No.:
+                    </label>
+                    <input style="padding: 5px;" required type="tel" id="phone-number">
+                </span>
+                <div>
+                    <span>
+                        <label for="location">
+                            Pick-Up:
+                        </label>
+                        <select id="location" required>
+                            <option value="LYN">Lyon</option>
+                            <option value="PAR">Paris</option>
+                            <option value="MAR">Marseille</option>
+                            <option value="TRY">Troyes</option>
+                            <option value="LLE">Lille</option>
+                            <option value="NTS">Nantes</option>
+                            <option value="LNS">Lens</option>
+                            <option value="BOR">Bordeaux</option>
+                        </select>
+                    </span>
+                    <span>
+                        <label for="Pick-Address">
+                            Pick-up Address:
+                        </label>
+                        <input style="padding: 5px;" required type="text" id="Pick-address">
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <label for="destination">
+                            Desination:
+                        </label>
+                        <select id="Destination" required>
+                            <option value="LYN">Lyon</option>
+                            <option value="PAR">Paris</option>
+                            <option value="MAR">Marseille</option>
+                            <option value="TRY">Troyes</option>
+                            <option value="LLE">Lille</option>
+                            <option value="NTS">Nantes</option>
+                            <option value="LNS">Lens</option>
+                            <option value="BOR">Bordeaux</option>
+                        </select>
+                    </span>
+                    <span>
+                        <label for="Drop-Address">
+                            Destination Address:
+                        </label>
+                        <input style="padding: 5px;" required type="text" id="Drop-address">
+                    </span>
+                </div>
+                <span>
+                    <label for="date">
+                        Date:
+                    </label>
+                    <input style="padding:  5px;" required type="date" id="date">
+                </span>
+                <span>
+                    <label for="time">
+                        Time:
+                    </label>
+                    <input type="time" id="time" style="padding: 5px;" required>
+                </span>
+                <div class="select-2">
+                    <span>
+                        <label for="passengers">
+                            Passengers:
+                        </label>
+                        <select id="passengers" required>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </span>
+                    <span>
+                        <label for="car-type">
+                            Vehicle type:
+                        </label>
+                        <select id="car-type" required>
+                            <option value="SUV">SUV</option>
+                            <option value="Convertible">Convertible</option>
+                            <option value="Sedan">Sedan</option>
+                        </select>
+                    </span>
+                    <span>
+                        <label for="security">
+                            Security:
+                        </label>
+                        <select id="security" required>
+                            <option value="no">No</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="px-5">
+                    <input class="btn btn-light btn-lg mt-4 sm-ml-3 p-4" type="submit" value="Proceed" style="text-transform: uppercase;">
+                    <input class="btn btn-light btn-lg mt-4 p-4" type="reset" style="text-transform: uppercase;">
+                </div>
+            </form>
+        </div>
+    </section>
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
